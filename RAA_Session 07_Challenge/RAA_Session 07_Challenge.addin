@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RevitAddIns>
+  <AddIn Type="Command">
+    <Text>Command RAA_Session 07_Challenge</Text>
+    <Description>Some description for RAA_Session 07_Challenge</Description>
+    <Assembly>RAA_Session 07_Challenge.dll</Assembly>
+    <FullClassName>RAA_Session_07_Challenge.Command</FullClassName>
+    <ClientId>7ef28e2e-d4ee-4c81-8ae0-f9a3a84e35a3</ClientId>
+    <VendorId>T Edward</VendorId>
+    <VendorDescription>T Edward Coder</VendorDescription>
+  </AddIn>
+  <AddIn Type="Application">
+    <Name>Application RAA_Session 07_Challenge</Name>
+    <Assembly>RAA_Session 07_Challenge.dll</Assembly>
+    <FullClassName>RAA_Session_07_Challenge.App</FullClassName>
+    <ClientId>383e434f-1712-4bd8-9f56-ec2d0ae23f44</ClientId>
+    <VendorId>T Edward</VendorId>
+    <VendorDescription>T Edward Coder</VendorDescription>
+  </AddIn>
+</RevitAddIns>
