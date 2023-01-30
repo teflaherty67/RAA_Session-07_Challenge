@@ -42,6 +42,8 @@ namespace RAA_Session_07_Challenge
                     string[] todoData = ToDoData.ParseDsiplayString(line);
 
                     ToDoData curToDo = new ToDoData(counter +1, todoData[0], todoData[1]);
+                    todoDataList.Add(curToDo);
+                    counter++;
                 }
             }
         }
