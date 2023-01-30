@@ -37,7 +37,7 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnUp = new System.Windows.Forms.Button();
             this.btnDown = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblFileName = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -52,8 +52,9 @@
             // 
             // label2
             // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(506, 24);
+            this.label2.Location = new System.Drawing.Point(554, 24);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(189, 32);
             this.label2.TabIndex = 1;
@@ -61,25 +62,28 @@
             // 
             // lbxToDo
             // 
-            this.lbxToDo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbxToDo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbxToDo.FormattingEnabled = true;
             this.lbxToDo.ItemHeight = 31;
             this.lbxToDo.Location = new System.Drawing.Point(27, 70);
             this.lbxToDo.Name = "lbxToDo";
-            this.lbxToDo.Size = new System.Drawing.Size(446, 686);
+            this.lbxToDo.Size = new System.Drawing.Size(494, 748);
             this.lbxToDo.TabIndex = 2;
             // 
             // tbxAddEdit
             // 
-            this.tbxAddEdit.Location = new System.Drawing.Point(512, 70);
+            this.tbxAddEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxAddEdit.Location = new System.Drawing.Point(560, 70);
             this.tbxAddEdit.Name = "tbxAddEdit";
-            this.tbxAddEdit.Size = new System.Drawing.Size(434, 38);
+            this.tbxAddEdit.Size = new System.Drawing.Size(526, 38);
             this.tbxAddEdit.TabIndex = 3;
             // 
             // btnAddEdit
             // 
-            this.btnAddEdit.Location = new System.Drawing.Point(512, 123);
+            this.btnAddEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddEdit.Location = new System.Drawing.Point(560, 123);
             this.btnAddEdit.Name = "btnAddEdit";
             this.btnAddEdit.Size = new System.Drawing.Size(160, 40);
             this.btnAddEdit.TabIndex = 4;
@@ -88,7 +92,8 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(512, 316);
+            this.btnEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEdit.Location = new System.Drawing.Point(560, 316);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(125, 40);
             this.btnEdit.TabIndex = 5;
@@ -97,7 +102,8 @@
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(512, 376);
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.Location = new System.Drawing.Point(560, 376);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(125, 40);
             this.btnDelete.TabIndex = 6;
@@ -106,7 +112,8 @@
             // 
             // btnUp
             // 
-            this.btnUp.Location = new System.Drawing.Point(512, 508);
+            this.btnUp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUp.Location = new System.Drawing.Point(560, 489);
             this.btnUp.Name = "btnUp";
             this.btnUp.Size = new System.Drawing.Size(100, 40);
             this.btnUp.TabIndex = 7;
@@ -115,38 +122,41 @@
             // 
             // btnDown
             // 
-            this.btnDown.Location = new System.Drawing.Point(512, 569);
+            this.btnDown.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDown.Location = new System.Drawing.Point(560, 550);
             this.btnDown.Name = "btnDown";
             this.btnDown.Size = new System.Drawing.Size(100, 40);
             this.btnDown.TabIndex = 8;
             this.btnDown.Text = "Dn";
             this.btnDown.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // lblFileName
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(506, 724);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(189, 32);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Add New Item";
+            this.lblFileName.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblFileName.AutoSize = true;
+            this.lblFileName.Location = new System.Drawing.Point(554, 775);
+            this.lblFileName.Name = "lblFileName";
+            this.lblFileName.Size = new System.Drawing.Size(260, 32);
+            this.lblFileName.TabIndex = 9;
+            this.lblFileName.Text = "Name of current file";
             // 
             // label4
             // 
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(506, 683);
+            this.label4.Location = new System.Drawing.Point(554, 734);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(189, 32);
+            this.label4.Size = new System.Drawing.Size(162, 32);
             this.label4.TabIndex = 10;
-            this.label4.Text = "Add New Item";
+            this.label4.Text = "Current File";
             // 
             // frmToDo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1007, 801);
+            this.ClientSize = new System.Drawing.Size(1129, 852);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblFileName);
             this.Controls.Add(this.btnDown);
             this.Controls.Add(this.btnUp);
             this.Controls.Add(this.btnDelete);
@@ -157,7 +167,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "frmToDo";
-            this.Text = "frmToDo";
+            this.Text = "Revit To Do Manager";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -174,7 +184,7 @@
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUp;
         private System.Windows.Forms.Button btnDown;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblFileName;
         private System.Windows.Forms.Label label4;
     }
 }

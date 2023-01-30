@@ -7,14 +7,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace RAA_Session_07_Challenge
 {
     public partial class frmToDo : Form
     {
-        public frmToDo()
+        string todoFilePath = "";
+
+        public frmToDo(string filePath)
         {
             InitializeComponent();
+
+            lblFileName.Text = Path.GetFileName(filePath);
+
+            string curPath = Path.GetDirectoryName(filePath);
+            string curFileName = Path.GetFileNameWithoutExtension(filePath) + "_ToDo.txt";
+
+            todoFilePath = curPath + @"\" + curFileName;
         }
     }
 }

@@ -25,7 +25,11 @@ namespace RAA_Session_07_Challenge
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
-             
+            frmToDo curForm = new frmToDo(doc.PathName);
+            curForm.TopMost = true;
+            curForm.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+
+            curForm.Show();            
 
             return Result.Succeeded;
         }
