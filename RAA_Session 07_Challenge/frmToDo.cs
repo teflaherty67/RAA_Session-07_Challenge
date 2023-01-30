@@ -14,7 +14,6 @@ namespace RAA_Session_07_Challenge
     public partial class frmToDo : Form
     {
         string todoFilePath = "";
-
         public frmToDo(string filePath)
         {
             InitializeComponent();
@@ -25,6 +24,22 @@ namespace RAA_Session_07_Challenge
             string curFileName = Path.GetFileNameWithoutExtension(filePath) + "_ToDo.txt";
 
             todoFilePath = curPath + @"\" + curFileName;
+
+            ReadToDoFile();
+        }
+
+        private void ReadToDoFile()
+        {
+            if(File.Exists(todoFilePath))
+            {
+                int counter = 0;
+                string[] strings = File.ReadAllLines(todoFilePath);
+
+                foreach( string line in strings )
+                {
+
+                }
+            }
         }
     }
 }
