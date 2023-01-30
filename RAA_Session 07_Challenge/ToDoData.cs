@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web;
 
 namespace RAA_Session_07_Challenge
 {
@@ -25,6 +26,19 @@ namespace RAA_Session_07_Challenge
         private void UpdateDisplayString()
         {
             Display = PositionNumber + " : " + Text + " : " + Status;
+        }
+
+        public static string[] ParseDsiplayString(string displayString)
+        {
+            string[] splitString = displayString.Split(':');
+            string text = splitString[1].Trim();
+            string status = splitString[2].Trim();
+
+            string[] returnString = new string[2];
+            returnString[0] = text;
+            returnString[1] = status;
+
+            return returnString;
         }
     }
 }

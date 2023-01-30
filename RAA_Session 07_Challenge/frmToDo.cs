@@ -14,6 +14,8 @@ namespace RAA_Session_07_Challenge
     public partial class frmToDo : Form
     {
         string todoFilePath = "";
+        BindingList<ToDoData> todoDataList = new BindingList<ToDoData>();
+         
         public frmToDo(string filePath)
         {
             InitializeComponent();
@@ -37,7 +39,9 @@ namespace RAA_Session_07_Challenge
 
                 foreach( string line in strings )
                 {
+                    string[] todoData = ToDoData.ParseDsiplayString(line);
 
+                    ToDoData curToDo = new ToDoData(counter +1, todoData[0], todoData[1]);
                 }
             }
         }
