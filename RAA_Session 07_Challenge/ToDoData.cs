@@ -23,7 +23,7 @@ namespace RAA_Session_07_Challenge
             UpdateDisplayString();
         }
 
-        private void UpdateDisplayString()
+        public void UpdateDisplayString()
         {
             Display = PositionNumber + " : " + Text + " : " + Status;
         }

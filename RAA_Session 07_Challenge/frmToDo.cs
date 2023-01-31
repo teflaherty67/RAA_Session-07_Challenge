@@ -46,6 +46,37 @@ namespace RAA_Session_07_Challenge
                     counter++;
                 }
             }
+
+            ShowData();
+        }
+
+        private void ShowData()
+        {
+            lbxToDo.DataSource = null;
+            lbxToDo.DataSource = todoDataList;
+            lbxToDo.DisplayMember = "Display";
+        }
+
+        private void AddToDoItem(string todoText)
+        {
+            ToDoData curToDo = new ToDoData(todoDataList.Count +1, todoText, "To Do");
+            todoDataList.Add(curToDo);
+
+            WriteToDoFile();
+        }
+
+        private void WriteToDoFile()
+        {
+            using (StreamWriter writer = File.CreateText(todoFilePath))
+            {
+                foreach(ToDoData curToDo in lbxToDo.Items)
+                {
+                    curToDo.UpdateDisplayString();
+                    writer.WriteLine(curToDo.Display);
+                }
+            }
+
+            ShowData();
         }
     }
 }
