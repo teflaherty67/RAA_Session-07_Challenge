@@ -89,6 +89,7 @@
             this.btnAddEdit.TabIndex = 4;
             this.btnAddEdit.Text = "Add Item";
             this.btnAddEdit.UseVisualStyleBackColor = true;
+            this.btnAddEdit.Click += new System.EventHandler(this.btnAddEdit_Click);
             // 
             // btnEdit
             // 
@@ -109,6 +110,7 @@
             this.btnDelete.TabIndex = 6;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUp
             // 

@@ -65,6 +65,22 @@ namespace RAA_Session_07_Challenge
             WriteToDoFile();
         }
 
+        private void RemoveItem(ToDoData curToDo)
+        {
+            todoDataList.Remove(curToDo);
+            ReOrderToDoItems();
+
+            WriteToDoFile();
+        }
+
+        private void ReOrderToDoItems()
+        {
+            for(int i = 0; i < todoDataList.Count; i++)
+            {
+                todoDataList[i].PositionNumber = i + 1;
+            }
+        }
+
         private void WriteToDoFile()
         {
             using (StreamWriter writer = File.CreateText(todoFilePath))
@@ -77,6 +93,20 @@ namespace RAA_Session_07_Challenge
             }
 
             ShowData();
+        }
+
+        private void btnAddEdit_Click(object sender, EventArgs e)
+        {
+            AddToDoItem(tbxAddEdit.Text);
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            if(lbxToDo.SelectedItems != null)
+            {
+                ToDoData curToDo = lbxToDo.SelectedItem as ToDoData;
+                RemoveItem(curToDo);
+            }
         }
     }
 }
