@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblAddEdit = new System.Windows.Forms.Label();
             this.lbxToDo = new System.Windows.Forms.ListBox();
             this.tbxAddEdit = new System.Windows.Forms.TextBox();
             this.btnAddEdit = new System.Windows.Forms.Button();
@@ -50,15 +50,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "To Do Items";
             // 
-            // label2
+            // lblAddEdit
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(554, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(189, 32);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Add New Item";
+            this.lblAddEdit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblAddEdit.AutoSize = true;
+            this.lblAddEdit.Location = new System.Drawing.Point(554, 24);
+            this.lblAddEdit.Name = "lblAddEdit";
+            this.lblAddEdit.Size = new System.Drawing.Size(189, 32);
+            this.lblAddEdit.TabIndex = 1;
+            this.lblAddEdit.Text = "Add New Item";
             // 
             // lbxToDo
             // 
@@ -71,6 +71,7 @@
             this.lbxToDo.Name = "lbxToDo";
             this.lbxToDo.Size = new System.Drawing.Size(494, 748);
             this.lbxToDo.TabIndex = 2;
+            this.lbxToDo.DoubleClick += new System.EventHandler(this.lbxToDo_DoubleClick);
             // 
             // tbxAddEdit
             // 
@@ -100,6 +101,7 @@
             this.btnEdit.TabIndex = 5;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
@@ -121,6 +123,7 @@
             this.btnUp.TabIndex = 7;
             this.btnUp.Text = "Up";
             this.btnUp.UseVisualStyleBackColor = true;
+            this.btnUp.Click += new System.EventHandler(this.btnUp_Click);
             // 
             // btnDown
             // 
@@ -131,6 +134,7 @@
             this.btnDown.TabIndex = 8;
             this.btnDown.Text = "Dn";
             this.btnDown.UseVisualStyleBackColor = true;
+            this.btnDown.Click += new System.EventHandler(this.btnDown_Click);
             // 
             // lblFileName
             // 
@@ -166,7 +170,7 @@
             this.Controls.Add(this.btnAddEdit);
             this.Controls.Add(this.tbxAddEdit);
             this.Controls.Add(this.lbxToDo);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lblAddEdit);
             this.Controls.Add(this.label1);
             this.Name = "frmToDo";
             this.Text = "Revit To Do Manager";
@@ -178,7 +182,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblAddEdit;
         private System.Windows.Forms.ListBox lbxToDo;
         private System.Windows.Forms.TextBox tbxAddEdit;
         private System.Windows.Forms.Button btnAddEdit;
