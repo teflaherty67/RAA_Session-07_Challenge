@@ -79,7 +79,9 @@ namespace RAA_Session_07_Challenge
             for(int i = 0; i < todoDataList.Count; i++)
             {
                 todoDataList[i].PositionNumber = i + 1;
+                todoDataList[i].UpdateDisplayString();
             }
+            WriteToDoFile();
         }
 
         private void WriteToDoFile()
