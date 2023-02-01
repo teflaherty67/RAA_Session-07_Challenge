@@ -210,7 +210,7 @@ namespace RAA_Session_07_Challenge
             {
                 if (todoDataList[i] == todo)
                 {
-                    if (i != 0)
+                    if (i <todoDataList.Count -1)
                     {
                         todoDataList.RemoveAt(i);
                         todoDataList.Insert(i - 1, todo);
