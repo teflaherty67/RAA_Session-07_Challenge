@@ -215,7 +215,7 @@ namespace RAA_Session_07_Challenge
                     if (i <todoDataList.Count -1)
                     {
                         todoDataList.RemoveAt(i);
-                        todoDataList.Insert(i - 1, todo);
+                        todoDataList.Insert(i + 1, todo);
                         ReOrderToDoItems();
                     }
                 }
